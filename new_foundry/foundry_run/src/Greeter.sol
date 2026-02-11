@@ -1,0 +1,18 @@
+pragma solidity ^0.8.20;
+
+
+contract Greeter {
+  string public text;
+
+
+
+
+  function setMessage(string memory _text) public  {
+   text = _text;
+  }
+
+
+  function getMessage() public view returns(string memory) {
+       return text;
+  }
+}
